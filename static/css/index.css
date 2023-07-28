@@ -1,6 +1,44 @@
+/* 네비 */
+.navBarSection .header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  width: 100%;
+  padding: 1rem;
+  z-index: 1000; 
+}
+  
+.navBarSection .header .logoDiv .logo {
+  color: var(--whiteColor);
+  font-weight: 500;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; 
+}
+
+.navBarSection .header .logoDiv .icon {
+  color: var(--PrimaryColor);
+  font-size: 3rem;
+  margin-right: 10px; 
+}
+
+.navBarSection .header .navBar .navLists .navItem {
+  color: var(--blackColor);
+  font-size: 1.5rem;
+  padding-right: 2rem; 
+}
+
+.navBarSection .header .navBar .navLists .navItem:hover {
+  color: var(--whiteColor); 
+}
+
+/* 메인 */
 .home {
   height: 80vh;
-  background-image: url("../image_files/photo1.jpg");
+  background-image: url("../images/photo1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,7 +53,6 @@
   text-align: center;
   color: var(--whiteColor);
   font-size: 2rem;
-  /* line-height: 2.5rem; */
 }
 
 .homeCard{
@@ -40,20 +77,20 @@
   padding-bottom: .4rem;
 }
 
+/* 달력, 렌트 비용 입력 */
 #day,#rent,#price{
   float: left;
   margin:auto;
   padding: 5px 10px 0 16px;
-  /* width: 200px; */
-  /* background-color: #ccc; */
 }
 
+/* 달력 */
 input[type="date"]{
   position: relative;
-  width: 250px;
+  width: 45%;
   height: 70px;
   padding: 0 42px 0 16px;
-  background: url("../image_files/cal.png") no-repeat right 21px center / 20px auto;
+  background: url("../images/cal.png") no-repeat right 21px center / 20px auto;
   border: 1px solid #ffffff;
   /* border: 1px solid #020202; */
   border-radius: 12px;
@@ -84,10 +121,11 @@ input[date-placeholder]::before{
   padding-left: 16px;
 }
 
+/* 렌트 */
 .dropdown {
   width: 250px;
   height: 70px;
-  background: url('../image_files/drop.png') no-repeat right 21px center;
+  background: url('../images/drop.png') no-repeat right 21px center;
   background-size: 20px;
   padding: 0 42px 0 16px;
   border-radius: 12px;
@@ -107,6 +145,7 @@ input[date-placeholder]::before{
   border: 1px solid #ffffff;
 }
 
+/* 비용 */
 .money{
   width: 250px;
   height: 70px;
@@ -115,6 +154,7 @@ input[date-placeholder]::before{
   border: 1px solid #ffffff;
 }
 
+/* 확인 버튼 */
 #ok { 
   width: 160px; 
   height: 80px; 

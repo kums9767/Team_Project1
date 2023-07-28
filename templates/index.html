@@ -2,28 +2,15 @@
 <html lang="ko">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <link rel="icon" href="http://localhost:3000/favicon.ico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1" maximum-scale="1.0," user-scalable="0/">
     <meta name="theme-color" content="#000000">
     <meta name="description" content="Web site created using create-react-app">
     <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
     
-    <link rel="manifest" href="http://localhost:3000/manifest.json">
-    
-    <title>부산어때</title>
-
-    <!-- css -->
-    <link rel= "stylesheet" href= "./css_files/base.css" type= "text/css">
-    <link rel= "stylesheet" href= "./css_files/nav.css" type= "text/css">
-    <link rel= "stylesheet" href= "./css_files/home.css" type= "text/css">
-    <link rel= "stylesheet" href= "./css_files/popular.css" type= "text/css">
-    <link rel= "stylesheet" href= "./css_files/footer.css" type= "text/css">
-
-    <!-- js -->
-    <script src="home.js"></script>
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}"> 
+    <title>부산어때 메인</title>
 
 </head>
 
@@ -64,7 +51,7 @@
 
           <!-- 입력칸 -->
           <div class= "homeCard">
-            <form method="POST", action= '/recommend'>
+            <form method="POST", action= "/post">
               <!-- 달력 -->
               <div id= "day">
                 <input name= "dep_date" value= "date" type= "date" data-placeholder= "기간(시작)" required/>
@@ -75,7 +62,7 @@
               <!-- 렌트 -->
               <div id= "rent">
                 <select class= "dropdown" name= car_capacity>
-                  <option value= 0>미선택</option>
+                  <option value= 0>렌트 미선택</option>
                   <option value= 4>4인승</option>
                   <option value= 5>5인승</option>
                   <option value= 7>7인승</option>
@@ -90,17 +77,12 @@
               </div>
 
               <div id= "ok" style="float: right;">
-                <button name= "ok_btn" class="btn">확인</button>
+                <button class="btn">확인</button>
               </div>
-
-
             </from>
           </div>
         </div>
       </section>
-
-      
-
 </body>
 </html>
 
