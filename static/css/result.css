@@ -1,4 +1,4 @@
-/* 네비 */
+/* 1. 네비 */
 .navBarSection .header {
   position: fixed;
   display: flex;
@@ -11,7 +11,7 @@
 }
   
 .navBarSection .header .logoDiv .logo {
-  color: var(--whiteColor);
+  color: rgba(9, 17, 26, 0.45);
   font-weight: 500;
   cursor: pointer;
   align-items: center;
@@ -20,30 +20,26 @@
 }
 
 .navBarSection .header .logoDiv .icon {
-  color: var(--PrimaryColor);
+  color: rgba(5, 1, 237, 0.45);
   font-size: 3rem;
   margin-right: 10px; 
 }
 
 .navBarSection .header .navBar .navLists .navItem {
-  color: var(--blackColor);
+  color: rgba(9, 17, 26, 0.45);
   font-size: 1.5rem;
   padding-right: 2rem; 
 }
 
-.navBarSection .header .navBar .navLists .navItem:hover {
-  color: var(--whiteColor); 
-}
-
 .navBarSection .activeHeader {
-  background: var(--textColor);
+  background: rgb(113, 170, 182);
   box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45); 
 }
 
-/* 메인 */
+/* 2. 메인 */
 .home {
-    height: 80vh;
-    background-image: url("../images/photo1.jpg");
+    height: 50vh;
+    background-image: url("../images/photo4.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -58,9 +54,10 @@
     text-align: center;
     color: var(--whiteColor);
     font-size: 2rem;
+    padding-top: 8rem;
   }
 
-  /* 결과 */
+  /* 3. 결과 */
 .popular {
     padding-top: 2rem;
 }
@@ -82,7 +79,7 @@
   border-collapse: collapse;
 }
 
-/* 표1,2,3 */
+/* 3-1. 테이블 1,2,3 */
 .box1, .box2, .box3{
   height: 60%;
   width: 90%;
@@ -97,21 +94,22 @@
   font-weight: 500;
   overflow: hidden;
   border-radius: 1rem;
-  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.334);
-  background: white;
+  box-shadow: 0 2px 5px 2px rgba(178, 178, 178, 0.334);
+  background:rgb(248, 248, 248);
   position: relative;
-  margin: 5px auto;
+  margin: 10px auto;
   justify-content: center;
   /* border: 1px solid black; */
   border-collapse: collapse;
 }
+
 
 .box1 td:nth-child(1) {
   width: 100px !important;
 }
 
 .box1 td:not(:nth-child(1)) {
-  width: 200px !important;
+  width: 300px !important;
 }
 
 .box1 td:nth-child(2) {
@@ -122,7 +120,7 @@
   width: 100px !important;
 }
 .box2 td:not(:nth-child(1)) {
-  width: 100px !important;
+  width: 150px !important;
 }
 
 .box2 td:nth-child(2) {
@@ -134,7 +132,7 @@
 }
 
 .box3 td:not(:nth-child(1)) {
-  width: 200px !important;
+  width: 300px !important;
 }
 
 .box3 td:nth-child(2) {
@@ -142,14 +140,14 @@
 }
 
 tr, td, th{
-  border-right: 1px solid black;
+  border: rgba(9, 17, 26, 0.45);
+  border-right: 2px solid rgba(9, 17, 26, 0.45);
   height: 60px;
   text-align: center;
-  font-size: 15px;
+  font-size: 20px;
 }
 
-
-
+/* 4. 하단 */
 .footer{
   width: 100%;
   height: 100px;

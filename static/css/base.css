@@ -8,7 +8,7 @@
     transition: .3s ease;
 }
 
-/* 색상 */
+/* 주요 색상 */
 :root{
     --PrimaryColor: hsl(26, 93%, 50%); /* 주요색상 */
     --HoverColor: hsl(26, 90%, 42%); /* 마우스 호버*/
@@ -58,7 +58,7 @@ li{
 /* 로그인, 로그아웃 버튼 */
 .btn{
     padding: 1rem 1rem;
-    background: var(--PrimaryColor);
+    background: rgb(113, 170, 182);
     border: none;
     outline: none;
     border-radius: 3rem;

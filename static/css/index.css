@@ -1,4 +1,4 @@
-/* 네비 */
+/* 1. 네비 */
 .navBarSection .header {
   position: fixed;
   display: flex;
@@ -11,7 +11,7 @@
 }
   
 .navBarSection .header .logoDiv .logo {
-  color: var(--whiteColor);
+  color: rgba(9, 17, 26, 0.45);
   font-weight: 500;
   cursor: pointer;
   align-items: center;
@@ -20,25 +20,26 @@
 }
 
 .navBarSection .header .logoDiv .icon {
-  color: var(--PrimaryColor);
+  color: rgba(5, 1, 237, 0.45);
   font-size: 3rem;
   margin-right: 10px; 
 }
 
 .navBarSection .header .navBar .navLists .navItem {
-  color: var(--blackColor);
+  color: rgba(9, 17, 26, 0.45);
   font-size: 1.5rem;
   padding-right: 2rem; 
 }
 
-.navBarSection .header .navBar .navLists .navItem:hover {
-  color: var(--whiteColor); 
+.navBarSection .activeHeader {
+  background: rgb(113, 170, 182);
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.45); 
 }
 
-/* 메인 */
+/* 2. 메인 */
 .home {
   height: 80vh;
-  background-image: url("../images/photo1.jpg");
+  background-image: url("../images/photo4.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,19 +48,21 @@
   justify-content: center;
   margin: auto;
   position: relative;
+
 }
 
 .homeText{
   text-align: center;
   color: var(--whiteColor);
   font-size: 2rem;
+  padding-top: 4rem;
 }
 
 .homeCard{
   display: flex;
   flex-direction: row; 
   justify-content: space-between;
-  width: 100%;
+  width: 98%;
   height: 20%;
   border-radius: 5rem;
   padding: .5rem;
@@ -77,17 +80,19 @@
   padding-bottom: .4rem;
 }
 
-/* 달력, 렌트 비용 입력 */
+/* 3. 입력란 */
 #day,#rent,#price{
   float: left;
   margin:auto;
+  font-size: 15px;
   padding: 5px 10px 0 16px;
 }
 
-/* 달력 */
+/* 3-1. 달력 */
 input[type="date"]{
+  font-size: 15px;
   position: relative;
-  width: 45%;
+  width: 240px;
   height: 70px;
   padding: 0 42px 0 16px;
   background: url("../images/cal.png") no-repeat right 21px center / 20px auto;
@@ -121,8 +126,9 @@ input[date-placeholder]::before{
   padding-left: 16px;
 }
 
-/* 렌트 */
+/* 3-2. 렌트 */
 .dropdown {
+  font-size: 15px;
   width: 250px;
   height: 70px;
   background: url('../images/drop.png') no-repeat right 21px center;
@@ -145,7 +151,7 @@ input[date-placeholder]::before{
   border: 1px solid #ffffff;
 }
 
-/* 비용 */
+/* 3-3. 에산 */
 .money{
   width: 250px;
   height: 70px;
@@ -154,18 +160,32 @@ input[date-placeholder]::before{
   border: 1px solid #ffffff;
 }
 
-/* 확인 버튼 */
-#ok { 
+/* 3-4. 확인 버튼 */
+#ok {
+  /* font-size: 15px; */
   width: 160px; 
   height: 80px; 
   border-radius: 0 150px 150px 0;
-  background: var(--PrimaryColor);
-  padding: 0 42px 0 16px;
-  float: right;
+  background: rgb(113, 170, 182);
+  padding-top: 10px;
+  display: inline-block;
+  text-align: center;
 }
 
 .btn{
   margin:auto;
-  padding: 25px 0px 0 35px;
+  /* padding: 25px 0px 0 35px; */
   font-size: 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* 4. 하단(fail.html 용도) */
+.footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
